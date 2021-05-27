@@ -1,0 +1,20 @@
+.reportTable
+{
+	border:1px solid #ccc;
+	border-radius:4px;
+	width:95%;
+	border-collapse:collapse;
+	height:auto;
+}
+.myThTr
+{
+	background-color:#ddefef;
+	color:#8877ee;
+	height:26px;
+}
+.myTr
+{
+	background-color:#ffeeff;
+	color:#333333;
+	height:26px;
+}

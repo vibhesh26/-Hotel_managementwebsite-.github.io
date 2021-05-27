@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+ul li
+{
+	
+	width:150px;
+	height:30px;
+	border: 0px solid #930;
+	text-align:center;
+	line-height:30px;
+	background-color:#ff0000;	
+	float:left;
+}
+
+ul li a
+{
+	text-decoration:none;
+	color:#000;
+	background::#F0FFE6;
+}
+
+ul li li
+{
+	background:#ff0000;
+	display:none;
+}
+
+ul li li:hover
+{
+	background-color:#930;
+}
+ul li li a
+{
+	color:#fff;
+}
+
+
+
+
+
+
+
+

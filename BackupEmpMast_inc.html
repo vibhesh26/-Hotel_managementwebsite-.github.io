@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="gcs.css">
+</head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration form</title>
+<script type="text/javascript">
+<!--
+//form validation code will come here,
+function validate()
+{
+	if(document.myform.fname.value=="")
+	{
+		alert("please provide your name!");
+		document.myform.fname.focus();
+		return false;
+	}
+	if(document.myform.contact_no.value=="")
+	{
+		alert("please provide your contact_no!");
+		document.myform.contact_no.focus();
+		return false;
+	}
+	if(document.myform.email.value=="")
+	{
+		alert("please provide your email!");
+		document.myform.email.focus();
+		return false;
+	}
+	if(document.myform.gender.value=="")
+	{
+		alert("please provide your gender!");
+		document.myform.gender.focus();
+		return false;
+	}
+	if(document.myform.password.value=="")
+	{
+		alert("please provide your password!");
+		document.myform.password.focus();
+		return false;
+	}
+     return (true);
+}
+//-->
+</script>
+
+<style type="text/css">
+#maindiv
+{
+	width:100%
+}
+#formdiv
+{
+	width:378px;
+
+    margin:0 auto;
+	margin-top:100px;
+	border-radius:6px;
+	border:1px#96f solid;
+	box-shadow:10px10px5px#888888;
+}
+#tableReg
+{
+	border-collapse:collapse;
+	width:400px
+	padding:5px;
+}
+td
+{
+	padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+<?php
+	
+?>
+ <div id="formdiv">
+
+ <div id ="maindiv">
+
+ <form action="BackupEmpMast_inc.php" method="POST"name= "myform"on onsubmit="return(validate());">
+
+ <table id ="tableReg">
+ <tr>
+     <td colspan="2" style="text-align:center;background-color:#060;ccf;padding:10px;color:#F00;font-size:18px;">Backup Emp Master Entry</td>
+ </tr>
+  <tr>
+     <td width="140px;">Emp Id</td>
+     <td><input type="text"name="EmpId"placeholder="enter Emp Id" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+     <td width="140px;">Name</td>
+     <td><input type="text"name="Name"placeholder="enter Name" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+     <td>Address</td>
+     <td><input type="text"name="Addr"placeholder="enter Address" /></td>
+ </tr>
+  <tr>
+  	<tr>
+     <td width="140px;">City</td>
+     <td><input type="text"name="city"placeholder="enter city" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+     <td width="140px;">Skill ID</td>
+     <td><input type="text"name="skillId"placeholder="enter Skill ID" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+     <td width="140px;">Job ID</td>
+     <td><input type="text"name="jobId"placeholder="enter Job ID" /><span style="color:#F00">*</span></td>
+ </tr>
+
+ <tr>
+     <td width="140px;">Emp Mob no</td>
+     <td><input type="text"name="MobNo"placeholder="enter mobile no" /><span style="color:#F00">*</span></td>
+ </tr>
+<tr>
+     <td width="140px;">Work Experience</td>
+     <td><input type="text"name="WorkExpr"placeholder="enter in years" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+     <td width="140px;">Last Company</td>
+     <td><input type="text"name="LastCompany"placeholder="enter full address" /><span style="color:#F00">*</span></td>
+ </tr>
+ <tr>
+    
+ 
+     <td width="140px;">Employee Gender</td>
+     <td><input type="text"name="Gender"placeholder="enter gender" /><span style="color:#F00">*</span></td>
+ </tr>
+    
+     
+ <tr>
+     <td></td>
+     <td >
+    <input type= "submit"style="cursor:pointer" /><input type= "reset" value="Reset"  style="cursor:pointer"/>
+    </td>
+ </tr>
+  
+    </table>
+</form> 
+   
+    </div>
+    </div>
+   
+   
+</body>
+</html>
